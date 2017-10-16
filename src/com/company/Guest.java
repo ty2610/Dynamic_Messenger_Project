@@ -1,27 +1,32 @@
 package com.company;
 
+import java.sql.Timestamp;
+import java.util.Date;
+
 public class Guest {
-    private int id;
+    private long id;
     private String firstName;
     private String lastName;
-    private int roomNumber;
-    private int startTimestamp;
-    private int endTimestamp;
+    private String fullName;
+    private long roomNumber;
+    private Date startTimestamp;
+    private Date endTimestamp;
 
-    public Guest(int id, String firstName, String lastName, int roomNumber, int startTimestamp, int endTimestamp) {
+    public Guest(long id, String firstName, String lastName, String fullName, long roomNumber, Date startTimestamp, Date endTimestamp) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.fullName = fullName;
         this.roomNumber = roomNumber;
         this.startTimestamp = startTimestamp;
         this.endTimestamp = endTimestamp;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -37,35 +42,39 @@ public class Guest {
         return lastName;
     }
 
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public int getRoomNumber() {
+    public long getRoomNumber() {
         return roomNumber;
     }
 
-    public void setRoomNumber(int roomNumber) {
+    public void setRoomNumber(long roomNumber) {
         this.roomNumber = roomNumber;
     }
 
-    public int getStartTimestamp() {
+    public Date getStartTimestamp() {
         return startTimestamp;
     }
 
-    public void setStartTimestamp(int startTimestamp) {
+    public void setStartTimestamp(Date startTimestamp) {
         this.startTimestamp = startTimestamp;
     }
 
-    public int getEndTimestamp() {
+    public Date getEndTimestamp() {
         return endTimestamp;
     }
 
-    public void setEndTimestamp(int endTimestamp) {
+    public void setEndTimestamp(Date endTimestamp) {
         this.endTimestamp = endTimestamp;
     }
-
-
-
-
 }

@@ -1,22 +1,22 @@
 package com.company;
 
 public class Company {
-    private int id;
+    private long id;
     private String companyName;
     private String cityName;
     private String timeZone;
 
-    public Company(int id, String companyName, String cityName, String timeZone) {
+    public Company(long id, String companyName, String cityName, String timeZone) {
         this.id = id;
         this.companyName = companyName;
         this.cityName = cityName;
         this.timeZone = timeZone;
     }
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
