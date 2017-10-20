@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "message": "Dear {firstName},\n {timeGreeting}. We hope you are enjoying your stay at {companyName}. If you have any questions don't hesitate to ask."
+  },
+  {
+    "id": 2,
+    "message": "Howdy {firstName},\nWe hope you are having a rootin tootin great time at {companyName}. Feel free to ride our horses around {cityName}."
+  },
+  {
+    "id": 3,
+    "message": "{firstName},\nWe regret to inform you that you must vacate room {roomNumber}. You have been banned from every {companyName} in the world."
+  }
+]
